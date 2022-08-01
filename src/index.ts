@@ -1,5 +1,5 @@
 import crossFetch, * as CrossFetch from 'cross-fetch'
-import { OperationDefinitionNode, DocumentNode } from 'graphql/language/ast'
+import type { OperationDefinitionNode, DocumentNode } from 'graphql/language/ast'
 
 import { parse } from 'graphql/language/parser'
 import { print } from 'graphql/language/printer'
@@ -13,10 +13,10 @@ import {
   parseRawRequestExtendedArgs,
   parseRequestExtendedArgs,
 } from './parseArgs'
-import {
+import { ClientError } from './types'
+import type {
   BatchRequestDocument,
   BatchRequestsOptions,
-  ClientError,
   RawRequestOptions,
   RequestDocument,
   RequestOptions,
@@ -28,7 +28,7 @@ import {
   MaybeFunction,
   Response,
 } from './types'
-import * as Dom from './types.dom'
+import type * as Dom from './types.dom'
 
 export {
   BatchRequestDocument,

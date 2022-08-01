@@ -1,4 +1,4 @@
-import {
+import type {
   BatchRequestDocument,
   BatchRequestsOptions,
   RawRequestOptions,
@@ -9,7 +9,7 @@ import {
   RequestExtendedOptions,
   Variables,
 } from './types'
-import * as Dom from './types.dom'
+import type * as Dom from './types.dom'
 
 export function parseRequestArgs<V = Variables>(
   documentOrOptions: RequestDocument | RequestOptions<V>,

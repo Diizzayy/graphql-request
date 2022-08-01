@@ -1,8 +1,9 @@
-import { isExtractableFile, extractFiles, ExtractableFile } from 'extract-files'
+import { isExtractableFile, extractFiles } from 'extract-files'
+import type { ExtractableFile } from 'extract-files'
 import FormDataNode from 'form-data'
 import { defaultJsonSerializer } from './defaultJsonSerializer'
 
-import { Variables } from './types'
+import type { Variables } from './types'
 
 /**
  * Duck type if NodeJS stream

@@ -1,5 +1,6 @@
-import { ClientError, RequestDocument, Variables } from './types';
-import * as Dom from './types.dom'
+import { ClientError  } from './types';
+import type {  RequestDocument, Variables } from './types';
+import type * as Dom from './types.dom'
 import { resolveRequestDocument } from '.';
 
 const CONNECTION_INIT = 'connection_init'

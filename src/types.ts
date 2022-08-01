@@ -1,6 +1,6 @@
-import { DocumentNode } from 'graphql/language/ast'
+import type { DocumentNode } from 'graphql/language/ast'
 import type { GraphQLError } from 'graphql/error/GraphQLError'
-import * as Dom from './types.dom'
+import type * as Dom from './types.dom'
 
 export type { GraphQLError }
 
